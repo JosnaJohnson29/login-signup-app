@@ -1,0 +1,119 @@
+
+.signup-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 16px;
+  background: linear-gradient(135deg, #d1fae5, #dbeafe);
+  font-family: Arial, sans-serif;
+}
+
+.signup-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 32px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.signup-card h1 {
+  text-align: center;
+  color: #047857;
+  margin: 0 0 10px;
+}
+
+.signup-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.signup-card form > label {
+  display: block;
+  margin: 15px 0 7px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.signup-card form > input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.signup-card input:focus {
+  outline: 2px solid #6ee7b7;
+  border-color: #059669;
+}
+
+.password-rules {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f8fafc;
+  font-size: 13px;
+}
+
+.password-rules p {
+  margin: 6px 0;
+}
+
+.password-rules p:first-child {
+  font-weight: bold;
+  color: #334155;
+}
+
+.rule-valid {
+  color: #047857;
+}
+
+.rule-invalid {
+  color: #64748b;
+}
+
+.form-error {
+  color: #dc2626;
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+.signup-card button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 13px;
+  color: white;
+  background: #059669;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-card button:hover {
+  background: #047857;
+}
+
+.signup-switch {
+  margin-top: 22px;
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.signup-switch a {
+  color: #059669;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .signup-card {
+    padding: 24px 20px;
+  }
+}

@@ -1,0 +1,106 @@
+
+.dashboard-page {
+  min-height: 100vh;
+  background: #f1f5f9;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 6%;
+  color: white;
+  background: #1e3a8a;
+}
+
+.dashboard-navbar h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.logout-button {
+  padding: 10px 18px;
+  color: white;
+  background: #dc2626;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.logout-button:hover,
+.dashboard-logout:hover {
+  background: #b91c1c;
+}
+
+.dashboard-content {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 16px;
+}
+
+.welcome-card {
+  width: 100%;
+  max-width: 550px;
+  padding: 40px;
+  text-align: center;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.welcome-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.welcome-card h1 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.welcome-card h2 {
+  color: #047857;
+  font-size: 21px;
+}
+
+.welcome-card > p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.user-details {
+  margin: 25px 0;
+  padding: 15px 20px;
+  text-align: left;
+  background: #f8fafc;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.user-details p {
+  margin: 12px 0;
+  color: #334155;
+}
+
+.dashboard-logout {
+  padding: 12px 26px;
+  color: white;
+  background: #dc2626;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .welcome-card {
+    padding: 28px 20px;
+  }
+
+  .dashboard-navbar h2 {
+    font-size: 18px;
+  }
+}

@@ -8,9 +8,9 @@ import {
   useNavigate,
 } from "react-router-dom";
 
-import Login from "./pages/Login/Login";
-import Signup from "./pages/Signup/Signup";
-import Dashboard from "./pages/Dashboard/Dashboard";
+import Login from "./Pages/Login/Login.jsx";
+import Signup from "./Pages/Signup/Signup.jsx";
+import Dashboard from "./Pages/Dashboard/Dashboard.jsx"
 import "./App.css";
 
 function AppRoutes() {
@@ -18,13 +18,13 @@ function AppRoutes() {
   const [currentUser, setCurrentUser] = useState(null);
   const navigate = useNavigate();
 
-  function handleSignup(user) {
+  const handleSignup = (user) => {
     setRegisteredUser(user);
-    alert("Signup successful! Please log in.");
+    alert("Account created successfully! Please log in.");
     navigate("/login");
-  }
+  };
 
-  function handleLogin(email, password) {
+  const handleLogin = (email, password) => {
     if (
       registeredUser &&
       registeredUser.email === email &&
@@ -36,12 +36,12 @@ function AppRoutes() {
     }
 
     return false;
-  }
+  };
 
-  function handleLogout() {
+  const handleLogout = () => {
     setCurrentUser(null);
     navigate("/login");
-  }
+  };
 
   return (
     <Routes>

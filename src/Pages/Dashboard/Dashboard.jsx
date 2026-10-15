@@ -2,36 +2,42 @@
 import React from "react";
 import "./Dashboard.css";
 
-function Dashboard({ user, onLogout }) {
+function Dashboard() {
+  const handleLogout = () => {
+    window.location.href = "/login";
+  };
+
   return (
     <div className="dashboard-page">
       <nav className="dashboard-navbar">
         <h2>My Dashboard</h2>
-        <button className="logout-button" onClick={onLogout}>
+        <button className="logout-top" onClick={handleLogout}>
           Logout
         </button>
       </nav>
 
-      <main className="dashboard-content">
-        <div className="welcome-card">
-          <div className="welcome-icon">🎉</div>
+      <div className="dashboard-container">
+        <div className="dashboard-card">
+          <div className="celebration-emoji">🎉</div>
 
-          <h1>Hi, {user.name}!</h1>
+          <h1>Hi, Josna Johnson!</h1>
           <h2>Welcome to this page!</h2>
 
-          <p>You have successfully logged in to your account.</p>
+          <p className="success-message">
+            You have successfully logged in to your account.
+          </p>
 
           <div className="user-details">
-            <p><strong>Name:</strong> {user.name}</p>
-            <p><strong>Email:</strong> {user.email}</p>
-            <p><strong>Phone:</strong> {user.phone}</p>
+            <p><strong>Name:</strong> Josna Johnson</p>
+            <p><strong>Email:</strong> josnajohnson01@gmail.com</p>
+            <p><strong>Phone:</strong> 8098631537</p>
           </div>
 
-          <button className="dashboard-logout" onClick={onLogout}>
-            <span>↪</span> Logout
+          <button className="logout-bottom" onClick={handleLogout}>
+            ↪ Logout
           </button>
         </div>
-      </main>
+      </div>
     </div>
   );
 }
